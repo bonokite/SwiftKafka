@@ -27,7 +27,7 @@ public class GlobalConfig {
     /// Initialises a new configuration object
     /// - parameter config: An instance of `GlobalConfig` to duplicate instead of creating 
     /// a new configuration with default properties.
-    init(byDiplicatingConfig config: GlobalConfig? = nil) throws {
+    public init(byDiplicatingConfig config: GlobalConfig? = nil) throws {
         
         if let config = config {
             handle = rd_kafka_conf_dup(config.handle)

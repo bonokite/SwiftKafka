@@ -6,7 +6,7 @@
 //
 //
 
-typealias MessageDeliveryClosure = (_ message: KafkaMessage?, _ error: KafkaError?) -> ()
+public typealias MessageDeliveryClosure = (_ message: KafkaMessage?, _ error: KafkaError?) -> ()
 
 /// Class for objects carried across `librdkafka`'s internals as pointers and used
 /// to get references for callbacks and producer/consumer instances

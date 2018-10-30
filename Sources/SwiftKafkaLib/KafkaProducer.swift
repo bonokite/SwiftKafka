@@ -10,7 +10,7 @@ import Foundation
 
 import ckafka
 
-class KafkaProducer: KafkaBase {
+public class KafkaProducer: KafkaBase {
  
     // MARK: - Public Properties
     
